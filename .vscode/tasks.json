@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Update components barrel file",
+			"type": "shell",
+			"command": "ls src/components/*.tsx | xargs -n1 basename | sed 's/.tsx$//' | grep -v index | xargs -I{} echo \"export { default as {} } from './{}';\" > src/components/index.ts",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
