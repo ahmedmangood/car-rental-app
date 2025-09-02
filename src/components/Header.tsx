@@ -43,7 +43,7 @@ export default function Header() {
           </svg>
         </div>
         <div className="flex flex-col ml-2">
-          <span className="text-xs text-gray">Need help?</span>
+          <span className="text-xs text-black">Need help?</span>
           <span className="text-sm font-semibold text-black">
             +996 247-1680
           </span>

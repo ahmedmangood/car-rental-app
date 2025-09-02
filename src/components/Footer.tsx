@@ -1,4 +1,4 @@
-import { Car, MapPin, Mail, Phone, Facebook } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
