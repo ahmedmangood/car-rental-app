@@ -12,6 +12,7 @@ const BookingSchema = new Schema({
     default: "pending",
   },
   paymentIntentId: { type: String },
+  location: { type: String, required: true },
 });
 
 export default models.Booking || model("Booking", BookingSchema);
