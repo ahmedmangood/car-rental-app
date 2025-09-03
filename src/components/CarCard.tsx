@@ -40,7 +40,7 @@ export default function CarCard({ car }: { car: Car }) {
         <Snowflake size={16} /> Air Conditioner
       </div>
       <Link
-        href={`/booking?car=${car._id}`}
+        href={`/cars/${car._id}`}
         className="w-full mt-auto bg-purple-600 text-white font-semibold py-2 rounded-lg shadow hover:bg-purple-700 transition text-center"
       >
         View Details

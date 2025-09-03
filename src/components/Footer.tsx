@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-white pt-10 pb-4 px-4 border-t border-gray-200">
       {/* Upper section: logo + contact info */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mb-6">
-        <div className="flex items-center gap-3 mb-2 min-w-[180px]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mb-6 w-full">
+        <div className="flex items-center gap-3 mb-2 min-w-[180px] w-full md:w-auto md:justify-start justify-start">
           <Image
             src={"/logo.svg"}
             alt="Car Rental Logo"
@@ -15,22 +15,22 @@ export default function Footer() {
           />
           <span className="font-semibold text-md">Car Rental</span>
         </div>
-        <div className="flex flex-row justify-center items-center w-full md:w-[900px] gap-12">
-          <div className="flex flex-col items-center text-center min-w-[200px]">
+        <div className="flex flex-wrap w-full gap-6 md:gap-12 md:justify-center md:items-center justify-start items-start flex-col md:flex-row mt-5 md:mt-0">
+          <div className="flex flex-col items-start md:items-center text-left min-w-[160px] md:min-w-[200px] flex-1">
             <span className="bg-yellow rounded-full p-2 mb-2 inline-block">
               <Phone size={22} className="text-white" />
             </span>
             <span className="text-sm mb-1">Phone</span>
             <span className="font-bold text-base">+537 547-6401</span>
           </div>
-          <div className="flex flex-col items-center text-center min-w-[200px]">
+          <div className="flex flex-col items-start text-left md:items-center min-w-[160px] md:min-w-[200px] flex-1">
             <span className="bg-yellow rounded-full p-2 mb-2 inline-block">
               <Mail size={22} className="text-white" />
             </span>
             <span className="text-sm mb-1">Email</span>
             <span className="font-bold text-base">nwiger@yahoo.com</span>
           </div>
-          <div className="flex flex-col items-center text-center min-w-[200px]">
+          <div className="flex flex-col items-start text-left min-w-[160px] md:items-center md:min-w-[200px] flex-1">
             <span className="bg-yellow rounded-full p-2 mb-2 inline-block">
               <MapPin size={22} className="text-white" />
             </span>
